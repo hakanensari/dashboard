@@ -1,0 +1,62 @@
+$content-vertical-padding: 15px;
+
+.content {
+  margin-top: $navbar-height;
+}
+
+.content,
+.navmenu-nav {
+   padding-top: $content-vertical-padding;
+}
+
+@media (max-width: $screen-md-min) {
+  .navbar-toggle {
+    border-width: 0;
+    display: block;
+  }
+}
+
+.navbar-nav {
+  & > li {
+    & > .dropdown-menu {
+      border-width: 0;
+      border-radius: 2px;
+      box-shadow: rgba($black, 0.08) 0 1px 2px 2px;
+
+      li > a {
+        padding-bottom: 0;
+        padding-top: 0;
+      }
+
+      .divider {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+.navbar-form {
+  padding-left: 0;
+
+  .input-group-addon {
+    background-color: transparent;
+    padding-left: 0;
+  }
+
+  .form-control {
+    box-shadow: none;
+  }
+
+  .input-group-addon,
+  .form-control {
+    border-width: 0;
+  }
+}
+
+.navbar-right {
+  margin-right: 0;
+
+  & > li > a {
+  	padding-bottom: 5px;
+  }
+}
