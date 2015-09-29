@@ -4,6 +4,31 @@
     box-shadow: rgba($black, .2) 0 1px 3px 0;
   }
 
+  .panel-info {
+    background-color: $color-success;
+    color: $white;
+    margin-top: 10px;
+
+    .lead {
+      font-size: $font-size-h2;
+      font-weight: 400;
+    }
+
+    .progress {
+      height: 4px;
+      width: 80%;
+
+      .progress-bar {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .btn {
+    border-width: 0;
+    margin-right: 10px;
+  }
+
   .btn-accent {
     background-color: $color-accent;
     color: $white !important;
