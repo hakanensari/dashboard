@@ -1,0 +1,21 @@
+.pagination {
+    li {
+      a {
+        border-radius: 50% !important;
+        border-width: 0;
+        padding: 0 8px;
+      }
+
+      &.active {
+        a {
+          color: $gray-light;
+        }
+      }
+
+      &:not(.active) {
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
