@@ -4,20 +4,12 @@
     }
 
     .editable {
-      background-color: transparent;
-      border-bottom: 1px dashed $gray-light;
-      border-left-width: 0;
-      border-right-width: 0;
-      border-top-width: 0;
+      background-color: $body-bg;
+      border-width: 0;
       color: $text-color;
 
       &:focus {
-        border-bottom: 1px solid $color-accent;
         outline: none;
-      }
-
-      &::selection {
-        background-color: $color-default;
       }
     }
   }
