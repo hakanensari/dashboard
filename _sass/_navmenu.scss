@@ -57,10 +57,10 @@
 
   .dropdown {
     &.open {
-      li > a {
-        &:hover {
-          background-color: $navmenu-inverse-brand-bg !important;
-        }
+      .dropdown-menu {
+        background-color: $navmenu-inverse-brand-bg;
+        padding-bottom: 10px;
+        padding-top: 10px;
       }
     }
   }
