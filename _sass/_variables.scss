@@ -1,15 +1,15 @@
 $black: #000;
 $white: #fff;
-$color-primary: #0ba89f;
+$color-primary: #0a998c;
 $color-accent: #9d27b1;
-$color-success: #4bb050;
-$color-info: #1f96f3;
-$color-warning: #f99403;
-$color-danger: #ee4235;
-$color-default: #e5e6e6;
+$color-success: #0090d8;
+$color-info: #1f3853;
+$color-warning: #fbb05e;
+$color-danger: #f45959;
+$color-default: #d1dade;
 
-$body-bg: #f7f7f8;
-$text-color: #313534;
+$body-bg: #e5e9ec;
+$text-color: #505458;
 $link-color: #166391;
 $brand-primary: $color-primary;
 $brand-success: $color-success;
@@ -39,4 +39,6 @@ $pagination-hover-bg: transparent;
 $well-bg: $white;
 $well-border: #7d7d8e;
 
+$progress-bar-bg: $white;
+$progress-bg: rgba($black, 0.2);
 $table-border-color: #e8e9e9;
