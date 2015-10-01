@@ -1,40 +1,39 @@
 .content {
-  .well {
+  .panel {
+    margin-top: 2em;
     border-width: 0;
-    box-shadow: rgba($black, .2) 0 1px 3px 0;
-  }
 
-  .panel-info {
-    background-color: $color-success;
-    color: $white;
-    margin-top: 10px;
+    &.chart {
+      .panel-body {
+        border-left: 5px solid $red;
+      }
 
-    .lead {
-      font-size: $font-size-h2;
-      font-weight: 400;
-    }
+      p {
+        font-size: $font-size-h2;
+        font-weight: 400;
+      }
 
-    .progress {
-      height: 4px;
-      width: 80%;
+      .progress {
+        background-color: $gray-lighter;
+        height: 4px;
+        width: 80%;
 
-      .progress-bar {
-        box-shadow: none;
+        .progress-bar {
+          background-color: $gray-dark;
+        }
+
+        &,
+        .progress-bar {
+          box-shadow: none;
+        }
       }
     }
-  }
 
-  .btn {
-    border-width: 0;
-    margin-right: 10px;
-  }
-
-  .btn-accent {
-    background-color: $color-accent;
-    color: $white !important;
-
-    &:hover {
-      background-color: darken($color-accent, 10%);
+    &.buttons {
+      .btn {
+        border-width: 0;
+        margin-right: 10px;
+      }
     }
   }
 }

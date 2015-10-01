@@ -1,4 +1,4 @@
-$content-vertical-padding: 15px;
+$content-vertical-padding: 20px;
 
 .content {
   margin-top: $navbar-height;
@@ -9,29 +9,16 @@ $content-vertical-padding: 15px;
    padding-top: $content-vertical-padding;
 }
 
+.navmenu-brand,
+.navbar-default > .container-fluid {
+  @include box-shadow(0 2px 2px rgba($black, .05));
+}
+
+
 @media (max-width: $screen-md-min) {
   .navbar-toggle {
     border-width: 0;
     display: block;
-  }
-}
-
-.navbar-nav {
-  & > li {
-    & > .dropdown-menu {
-      border-width: 0;
-      border-radius: 2px;
-      box-shadow: rgba($black, 0.08) 0 1px 2px 2px;
-
-      li > a {
-        padding-bottom: 0;
-        padding-top: 0;
-      }
-
-      .divider {
-        margin: 5px 0;
-      }
-    }
   }
 }
 
@@ -56,7 +43,15 @@ $content-vertical-padding: 15px;
 .navbar-right {
   margin-right: 0;
 
-  & > li > a {
-  	padding-bottom: 5px;
+  & > li {
+    & > a {
+      padding-bottom: 5px;
+    }
+
+    & > .dropdown-menu {
+      border-width: 0;
+      border-radius: 2px;
+      box-shadow: rgba($black, 0.1) 0 1px 2px 2px;
+    }
   }
 }
